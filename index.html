@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Exam statistics</title>
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="exam">
+            <div class="exam-title">
+                Exam statistic
+                <span class="exam-title-month">June</span>
+            </div>
+            
+            <div class="exam-total">Total students:<span class="total-students"></span></div>
+            
+
+            <div class="exam-passed clearfix">
+                <div class="exam-passed-text">passed</div>
+                <div class="right">
+                    <div class="exam-passed-count">0</div>
+                    <div class="exam-passed-percentage">&nbsp;</div>
+                </div>
+            </div>
+
+            <div class="exam-failed clearfix">
+                <div class="exam-failed-text">failed</div>
+                <div class="right clearfix">
+                    <div class="exam-failed-count">0</div>
+                    <div class="exam-failed-percentage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="add">
+            <div class="add-container">
+                <div class="error-text"></div>
+                <select class="add-subject">
+                    <option value="">-</option>
+                    <option value="web">Web</option>
+                    <option value="js">JavaScript</option>
+                    <option value="spa">SPA</option>
+                </select>
+                <input type="text" class="add-student-name" placeholder="Name surname">
+                <input type="number" class="add-grade" min="5" max="10" placeholder="Grade">
+                <button class="add-btn">ADD</i>
+                </button>
+            </div>
+        </div>
+
+        <div class="container clearfix">
+            <div class="passed">
+                <h2 class="passed-title">passed</h2>
+
+                <div>
+                    <ul class="passed-list"></ul>
+                </div>
+            </div>
+
+            <div class="failed">
+                <h2 class="failed-title">failed</h2>
+
+                <div>
+                    <ul class="failed-list"></ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
